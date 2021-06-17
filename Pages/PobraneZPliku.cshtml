@@ -1,0 +1,15 @@
+﻿@page
+@model Zad3.Pages.IndexModel
+@{
+    ViewData["Title"] = "Pobrane z Pliku";
+}
+<div class="card-columns">
+    @foreach (var product in Model.Product)
+{
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">@product.title</h5>
+        </div>
+    </div>
+}
+</div>
